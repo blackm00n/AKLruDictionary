@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AF61F2C1A35F0C8005476EE /* libAKLruDictionary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF61F201A35F0C8005476EE /* libAKLruDictionary.a */; };
+		8AF61F401A35F12E005476EE /* AKLruDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF61F3B1A35F12E005476EE /* AKLruDictionary.m */; };
+		8AF61F411A35F12E005476EE /* AKLruNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF61F3D1A35F12E005476EE /* AKLruNode.m */; };
+		8AF61F421A35F12E005476EE /* UIImage+AKLruDictionaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF61F3F1A35F12E005476EE /* UIImage+AKLruDictionaryObject.m */; };
+		8AF61F451A35FB0B005476EE /* AKLruDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BFB98EEDC9818287840B /* AKLruDictionaryTests.m */; };
+		ABA7B0D145DB115940B8FCBF /* AKThreadSafeLruDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B5129BFA914B70770E96 /* AKThreadSafeLruDictionary.m */; };
+		ABA7B3A60AACC2038FEE9E2D /* NSNumber+AKLruDictionaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B78DD4A0188A52FA9D48 /* NSNumber+AKLruDictionaryObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AF61F2D1A35F0C8005476EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AF61F181A35F0C8005476EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AF61F1F1A35F0C8005476EE;
+			remoteInfo = AKLruDictionary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AF61F1E1A35F0C8005476EE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8AF61F201A35F0C8005476EE /* libAKLruDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAKLruDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF61F2B1A35F0C8005476EE /* AKLruDictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKLruDictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF61F311A35F0C8005476EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF61F3A1A35F12E005476EE /* AKLruDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLruDictionary.h; sourceTree = "<group>"; };
+		8AF61F3B1A35F12E005476EE /* AKLruDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLruDictionary.m; sourceTree = "<group>"; };
+		8AF61F3C1A35F12E005476EE /* AKLruNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLruNode.h; sourceTree = "<group>"; };
+		8AF61F3D1A35F12E005476EE /* AKLruNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLruNode.m; sourceTree = "<group>"; };
+		8AF61F3F1A35F12E005476EE /* UIImage+AKLruDictionaryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AKLruDictionaryObject.m"; sourceTree = "<group>"; };
+		8AF61F431A35F14D005476EE /* AKLruDictionary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AKLruDictionary-Prefix.pch"; sourceTree = "<group>"; };
+		ABA7B5129BFA914B70770E96 /* AKThreadSafeLruDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKThreadSafeLruDictionary.m; sourceTree = "<group>"; };
+		ABA7B78DD4A0188A52FA9D48 /* NSNumber+AKLruDictionaryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+AKLruDictionaryObject.m"; sourceTree = "<group>"; };
+		ABA7BCB06DDAA74B1002C337 /* AKThreadSafeLruDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKThreadSafeLruDictionary.h; sourceTree = "<group>"; };
+		ABA7BFB98EEDC9818287840B /* AKLruDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLruDictionaryTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AF61F1D1A35F0C8005476EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF61F281A35F0C8005476EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF61F2C1A35F0C8005476EE /* libAKLruDictionary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AF61F171A35F0C8005476EE = {
+			isa = PBXGroup;
+			children = (
+				8AF61F221A35F0C8005476EE /* AKLruDictionary */,
+				8AF61F2F1A35F0C8005476EE /* AKLruDictionaryTests */,
+				8AF61F211A35F0C8005476EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AF61F211A35F0C8005476EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AF61F201A35F0C8005476EE /* libAKLruDictionary.a */,
+				8AF61F2B1A35F0C8005476EE /* AKLruDictionaryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AF61F221A35F0C8005476EE /* AKLruDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				8AF61F441A35F155005476EE /* Supporting Files */,
+				8AF61F3A1A35F12E005476EE /* AKLruDictionary.h */,
+				8AF61F3B1A35F12E005476EE /* AKLruDictionary.m */,
+				8AF61F3C1A35F12E005476EE /* AKLruNode.h */,
+				8AF61F3D1A35F12E005476EE /* AKLruNode.m */,
+				8AF61F3F1A35F12E005476EE /* UIImage+AKLruDictionaryObject.m */,
+				ABA7BCB06DDAA74B1002C337 /* AKThreadSafeLruDictionary.h */,
+				ABA7B5129BFA914B70770E96 /* AKThreadSafeLruDictionary.m */,
+			);
+			path = AKLruDictionary;
+			sourceTree = "<group>";
+		};
+		8AF61F2F1A35F0C8005476EE /* AKLruDictionaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AF61F301A35F0C8005476EE /* Supporting Files */,
+				ABA7BFB98EEDC9818287840B /* AKLruDictionaryTests.m */,
+				ABA7B78DD4A0188A52FA9D48 /* NSNumber+AKLruDictionaryObject.m */,
+			);
+			path = AKLruDictionaryTests;
+			sourceTree = "<group>";
+		};
+		8AF61F301A35F0C8005476EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AF61F311A35F0C8005476EE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8AF61F441A35F155005476EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AF61F431A35F14D005476EE /* AKLruDictionary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AF61F1F1A35F0C8005476EE /* AKLruDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF61F341A35F0C8005476EE /* Build configuration list for PBXNativeTarget "AKLruDictionary" */;
+			buildPhases = (
+				8AF61F1C1A35F0C8005476EE /* Sources */,
+				8AF61F1D1A35F0C8005476EE /* Frameworks */,
+				8AF61F1E1A35F0C8005476EE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKLruDictionary;
+			productName = AKLruDictionary;
+			productReference = 8AF61F201A35F0C8005476EE /* libAKLruDictionary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8AF61F2A1A35F0C8005476EE /* AKLruDictionaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF61F371A35F0C8005476EE /* Build configuration list for PBXNativeTarget "AKLruDictionaryTests" */;
+			buildPhases = (
+				8AF61F271A35F0C8005476EE /* Sources */,
+				8AF61F281A35F0C8005476EE /* Frameworks */,
+				8AF61F291A35F0C8005476EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AF61F2E1A35F0C8005476EE /* PBXTargetDependency */,
+			);
+			name = AKLruDictionaryTests;
+			productName = AKLruDictionaryTests;
+			productReference = 8AF61F2B1A35F0C8005476EE /* AKLruDictionaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AF61F181A35F0C8005476EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Aleksey Kozhevnikov";
+				TargetAttributes = {
+					8AF61F1F1A35F0C8005476EE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					8AF61F2A1A35F0C8005476EE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 8AF61F1B1A35F0C8005476EE /* Build configuration list for PBXProject "AKLruDictionary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8AF61F171A35F0C8005476EE;
+			productRefGroup = 8AF61F211A35F0C8005476EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AF61F1F1A35F0C8005476EE /* AKLruDictionary */,
+				8AF61F2A1A35F0C8005476EE /* AKLruDictionaryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AF61F291A35F0C8005476EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AF61F1C1A35F0C8005476EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF61F401A35F12E005476EE /* AKLruDictionary.m in Sources */,
+				8AF61F411A35F12E005476EE /* AKLruNode.m in Sources */,
+				8AF61F421A35F12E005476EE /* UIImage+AKLruDictionaryObject.m in Sources */,
+				ABA7B0D145DB115940B8FCBF /* AKThreadSafeLruDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF61F271A35F0C8005476EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF61F451A35FB0B005476EE /* AKLruDictionaryTests.m in Sources */,
+				ABA7B3A60AACC2038FEE9E2D /* NSNumber+AKLruDictionaryObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AF61F2E1A35F0C8005476EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AF61F1F1A35F0C8005476EE /* AKLruDictionary */;
+			targetProxy = 8AF61F2D1A35F0C8005476EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8AF61F321A35F0C8005476EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8AF61F331A35F0C8005476EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AF61F351A35F0C8005476EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AKLruDictionary/AKLruDictionary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8AF61F361A35F0C8005476EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AKLruDictionary/AKLruDictionary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8AF61F381A35F0C8005476EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AKLruDictionaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8AF61F391A35F0C8005476EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AKLruDictionaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AF61F1B1A35F0C8005476EE /* Build configuration list for PBXProject "AKLruDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF61F321A35F0C8005476EE /* Debug */,
+				8AF61F331A35F0C8005476EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF61F341A35F0C8005476EE /* Build configuration list for PBXNativeTarget "AKLruDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF61F351A35F0C8005476EE /* Debug */,
+				8AF61F361A35F0C8005476EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF61F371A35F0C8005476EE /* Build configuration list for PBXNativeTarget "AKLruDictionaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF61F381A35F0C8005476EE /* Debug */,
+				8AF61F391A35F0C8005476EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AF61F181A35F0C8005476EE /* Project object */;
+}
