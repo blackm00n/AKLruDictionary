@@ -1,16 +1,16 @@
 LRUDictionary
 =============
 
-LRU (least recently used) memory cache data structure with a similar API as NSMutableDictionary
+LRU (least recently used) memory cache data structure with a similar API as NSCache
 
 Usage
 -----
 
 ```objc
 // Create cache for UIImage objects with total max size of 2 MB, objects exceeding size of 150 KB will be ignored
-self.cache = [[AKLruDictionary alloc] initWithMaxObjectsCount:SIZE_T_MAX
-                                                 maxTotalSize:2 * 1024 * 1024
-                                               maxElementSize:150 * 1024];
+self.cache = [[AKLruDictionary alloc] initWithCountLimit:NSUIntegerMax
+                                      perObjectCostLimit:2 * 1024 * 1024
+                                               costLimit:150 * 1024];
 
 ...
 
@@ -18,9 +18,10 @@ self.cache = [[AKLruDictionary alloc] initWithMaxObjectsCount:SIZE_T_MAX
 {
     NSParameterAssert(magicText != nil);
     
-    UIImage* image = self.cache[magicText];
+    UIImage* image = [self.cache objectForKey:magicText];
     if( image == nil ) {
-        self.cache[magicText] = image = [MagicClass drawImageWithMagicText:magicText];
+        image = [MagicClass drawImageWithMagicText:magicText];
+        [self.cache setObject:image forKey:magicText cost:[image ak_bytesCost]];
     }
     return image;
 }
