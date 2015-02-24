@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name = "AKLruDictionary"
   s.platform = :ios
-  s.version = "1.0"
-  s.summary = "LRU (least recently used) memory cache data structure with a similar API as NSMutableDictionary."
+  s.version = "2.0"
+  s.summary = "LRU (least recently used) memory cache data structure with a similar API as NSCache."
   s.homepage = "https://github.com/blackm00n/AKLruDictionary"
   s.license = 'MIT'
   s.author = { "Aleksey Kozhevnikov" => "aleksey.kozhevnikov@gmail.com" }
