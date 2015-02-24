@@ -10,10 +10,9 @@
 		8AF61F2C1A35F0C8005476EE /* libAKLruDictionary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF61F201A35F0C8005476EE /* libAKLruDictionary.a */; };
 		8AF61F401A35F12E005476EE /* AKLruDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF61F3B1A35F12E005476EE /* AKLruDictionary.m */; };
 		8AF61F411A35F12E005476EE /* AKLruNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF61F3D1A35F12E005476EE /* AKLruNode.m */; };
-		8AF61F421A35F12E005476EE /* UIImage+AKLruDictionaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF61F3F1A35F12E005476EE /* UIImage+AKLruDictionaryObject.m */; };
 		8AF61F451A35FB0B005476EE /* AKLruDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BFB98EEDC9818287840B /* AKLruDictionaryTests.m */; };
 		ABA7B0D145DB115940B8FCBF /* AKThreadSafeLruDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B5129BFA914B70770E96 /* AKThreadSafeLruDictionary.m */; };
-		ABA7B3A60AACC2038FEE9E2D /* NSNumber+AKLruDictionaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B78DD4A0188A52FA9D48 /* NSNumber+AKLruDictionaryObject.m */; };
+		ABA7B22CB60C24B268FE2FFB /* UIImage+BytesCost.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BC2442EEEE69BDC1B3FC /* UIImage+BytesCost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +45,10 @@
 		8AF61F3B1A35F12E005476EE /* AKLruDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLruDictionary.m; sourceTree = "<group>"; };
 		8AF61F3C1A35F12E005476EE /* AKLruNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLruNode.h; sourceTree = "<group>"; };
 		8AF61F3D1A35F12E005476EE /* AKLruNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLruNode.m; sourceTree = "<group>"; };
-		8AF61F3F1A35F12E005476EE /* UIImage+AKLruDictionaryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AKLruDictionaryObject.m"; sourceTree = "<group>"; };
 		8AF61F431A35F14D005476EE /* AKLruDictionary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AKLruDictionary-Prefix.pch"; sourceTree = "<group>"; };
+		ABA7B0B0681B64F6C10F67CE /* UIImage+BytesCost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BytesCost.h"; sourceTree = "<group>"; };
 		ABA7B5129BFA914B70770E96 /* AKThreadSafeLruDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKThreadSafeLruDictionary.m; sourceTree = "<group>"; };
-		ABA7B78DD4A0188A52FA9D48 /* NSNumber+AKLruDictionaryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+AKLruDictionaryObject.m"; sourceTree = "<group>"; };
+		ABA7BC2442EEEE69BDC1B3FC /* UIImage+BytesCost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BytesCost.m"; sourceTree = "<group>"; };
 		ABA7BCB06DDAA74B1002C337 /* AKThreadSafeLruDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKThreadSafeLruDictionary.h; sourceTree = "<group>"; };
 		ABA7BFB98EEDC9818287840B /* AKLruDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLruDictionaryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,9 +98,10 @@
 				8AF61F3B1A35F12E005476EE /* AKLruDictionary.m */,
 				8AF61F3C1A35F12E005476EE /* AKLruNode.h */,
 				8AF61F3D1A35F12E005476EE /* AKLruNode.m */,
-				8AF61F3F1A35F12E005476EE /* UIImage+AKLruDictionaryObject.m */,
 				ABA7BCB06DDAA74B1002C337 /* AKThreadSafeLruDictionary.h */,
 				ABA7B5129BFA914B70770E96 /* AKThreadSafeLruDictionary.m */,
+				ABA7BC2442EEEE69BDC1B3FC /* UIImage+BytesCost.m */,
+				ABA7B0B0681B64F6C10F67CE /* UIImage+BytesCost.h */,
 			);
 			path = AKLruDictionary;
 			sourceTree = "<group>";
@@ -111,7 +111,6 @@
 			children = (
 				8AF61F301A35F0C8005476EE /* Supporting Files */,
 				ABA7BFB98EEDC9818287840B /* AKLruDictionaryTests.m */,
-				ABA7B78DD4A0188A52FA9D48 /* NSNumber+AKLruDictionaryObject.m */,
 			);
 			path = AKLruDictionaryTests;
 			sourceTree = "<group>";
@@ -222,7 +221,6 @@
 			files = (
 				8AF61F401A35F12E005476EE /* AKLruDictionary.m in Sources */,
 				8AF61F411A35F12E005476EE /* AKLruNode.m in Sources */,
-				8AF61F421A35F12E005476EE /* UIImage+AKLruDictionaryObject.m in Sources */,
 				ABA7B0D145DB115940B8FCBF /* AKThreadSafeLruDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AF61F451A35FB0B005476EE /* AKLruDictionaryTests.m in Sources */,
-				ABA7B3A60AACC2038FEE9E2D /* NSNumber+AKLruDictionaryObject.m in Sources */,
+				ABA7B22CB60C24B268FE2FFB /* UIImage+BytesCost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

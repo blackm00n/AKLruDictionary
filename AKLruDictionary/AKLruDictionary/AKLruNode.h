@@ -5,8 +5,8 @@
 
 @interface AKLruNodeData : NSObject
 
-@property(nonatomic) size_t dataSize;
-@property(nonatomic, copy) id key;
+@property(nonatomic) NSUInteger cost;
+@property(nonatomic) id key;
 @property(nonatomic) id object;
 
 @end
@@ -19,7 +19,7 @@
 
 @property(nonatomic) AKLruNodeData* nodeData;
 
--(void)insertBefore:(AKLruNode*)node __attribute__((nonnull));
+-(void)insertBefore:(AKLruNode*)node;
 -(void)detach;
 
 @end

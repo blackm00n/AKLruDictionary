@@ -17,7 +17,7 @@
 
 @implementation AKThreadSafeLruDictionary
 
-- (instancetype)initWithMaxObjectsCount:(size_t)maxCount maxTotalSize:(size_t)maxSize maxElementSize:(size_t)maxElementSize
+- (instancetype)initWithCountLimit:(NSUInteger)countLimit perObjectCostLimit:(NSUInteger)perObjectCostLimit costLimit:(NSUInteger)costLimit;
 {
     self = [super init];
     if( self == nil ) {
@@ -25,21 +25,36 @@
     }
 
     _lock = OS_SPINLOCK_INIT;
-    _lruDictionary = [[AKLruDictionary alloc] initWithMaxObjectsCount:maxCount maxTotalSize:maxSize maxElementSize:maxElementSize];
+    _lruDictionary = [[AKLruDictionary alloc] initWithCountLimit:countLimit perObjectCostLimit:perObjectCostLimit costLimit:costLimit];
 
     return self;
 }
 
-- (void)removeObjectForKey:(id<NSCopying>)key
+- (NSUInteger)countLimit
+{
+    return self.lruDictionary.countLimit;
+}
+
+- (NSUInteger)perObjectCostLimit
+{
+    return self.lruDictionary.perObjectCostLimit;
+}
+
+- (NSUInteger)costLimit
+{
+    return self.lruDictionary.costLimit;
+}
+
+- (void)setObject:(id)object forKey:(id)key cost:(NSUInteger)cost
 {
     OSSpinLockLock(&_lock);
 
-    [self.lruDictionary removeObjectForKey:key];
+    [self.lruDictionary setObject:object forKey:key cost:cost];
 
     OSSpinLockUnlock(&_lock);
 }
 
-- (void)setObject:(id)object forKey:(id<NSCopying>)key
+- (void)setObject:(id)object forKey:(id)key
 {
     OSSpinLockLock(&_lock);
 
@@ -48,7 +63,7 @@
     OSSpinLockUnlock(&_lock);
 }
 
-- (id)objectForKey:(id<NSCopying>)key
+- (id)objectForKey:(id)key
 {
     id result = nil;
 
@@ -61,14 +76,13 @@
     return result;
 }
 
-- (void)setObject:(id)object forKeyedSubscript:(id<NSCopying>)key
+- (void)removeObjectForKey:(id)key
 {
-    [self setObject:object forKey:key];
-}
+    OSSpinLockLock(&_lock);
 
-- (id)objectForKeyedSubscript:(id<NSCopying>)key
-{
-    return [self objectForKey:key];
+    [self.lruDictionary removeObjectForKey:key];
+
+    OSSpinLockUnlock(&_lock);
 }
 
 - (void)removeAllObjects
