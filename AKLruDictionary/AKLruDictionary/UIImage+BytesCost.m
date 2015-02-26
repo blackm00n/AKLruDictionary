@@ -1,6 +1,6 @@
 //
-// Created by Alexey Kozhevnikov on 24.02.15.
-// Copyright (c) 2015 Aleksey Kozhevnikov. All rights reserved.
+// This file is subject to the terms and conditions defined in
+// file 'LICENSE', which is part of this source code package.
 //
 
 #import "UIImage+BytesCost.h"
